@@ -77,13 +77,13 @@ export default function ItemList() {
 ];
 
   return (
-    <ul className="space-y-2">
-      {items.map((it) => (
+    <ul className="space-y-2 p-3 mr-20">
+      {items.map((item, index) => (
         <Item
-          key={it.name}
-          name={it.name}
-          quantity={it.quantity}
-          category={it.category}
+          key={index}
+          name={item.name}
+          quantity={item.quantity}
+          category={item.category}
         />
       ))}
     </ul>
